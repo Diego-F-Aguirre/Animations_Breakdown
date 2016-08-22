@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ap3-RP-r8h">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animations_Breakdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurBack" translatesAutoresizingMaskIntoConstraints="NO" id="GsK-qe-5yh">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40w-61-MTG" customClass="CustomTextField" customModule="Animations_Breakdown" customModuleProvider="target">
+                                <rect key="frame" x="20" y="84" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.30000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02e-Vq-MD7" customClass="CustomTextField" customModule="Animations_Breakdown" customModuleProvider="target">
+                                <rect key="frame" x="20" y="134" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.30000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Conform Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4zr-hE-8Wp" customClass="CustomTextField" customModule="Animations_Breakdown" customModuleProvider="target">
+                                <rect key="frame" x="20" y="184" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" alpha="0.30000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ub4-aE-cSj" customClass="CustomTextField" customModule="Animations_Breakdown" customModuleProvider="target">
+                                <rect key="frame" x="20" y="234" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tv1-mQ-Gi7">
+                                <rect key="frame" x="275" y="285" width="50" height="30"/>
+                                <state key="normal" title="SignUp">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JYj-No-we8" kind="show" id="U4S-1P-TTm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUt-TK-z4U">
+                                <rect key="frame" x="209" y="539" width="182" height="30"/>
+                                <state key="normal" title="I Already Have An Acocunt">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleLoginAndSignup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbO-Vn-8gs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ub4-aE-cSj" firstAttribute="top" secondItem="4zr-hE-8Wp" secondAttribute="bottom" constant="20" id="2rQ-85-Gbw"/>
+                            <constraint firstItem="ub4-aE-cSj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="95F-sy-4e5"/>
+                            <constraint firstItem="02e-Vq-MD7" firstAttribute="top" secondItem="40w-61-MTG" secondAttribute="bottom" constant="20" id="AZv-aG-TLW"/>
+                            <constraint firstItem="02e-Vq-MD7" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BCl-t0-KeT"/>
+                            <constraint firstItem="40w-61-MTG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DGK-Go-FsQ"/>
+                            <constraint firstItem="Tv1-mQ-Gi7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FiK-aG-678"/>
+                            <constraint firstItem="4zr-hE-8Wp" firstAttribute="top" secondItem="02e-Vq-MD7" secondAttribute="bottom" constant="20" id="GNY-tp-a2E"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GsK-qe-5yh" secondAttribute="bottom" id="Kfe-J7-uYm"/>
+                            <constraint firstAttribute="trailing" secondItem="GsK-qe-5yh" secondAttribute="trailing" id="XwW-Jc-vFK"/>
+                            <constraint firstItem="TUt-TK-z4U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yom-6w-vgR"/>
+                            <constraint firstItem="Tv1-mQ-Gi7" firstAttribute="top" secondItem="ub4-aE-cSj" secondAttribute="bottom" constant="21" id="YtB-nW-fdk"/>
+                            <constraint firstItem="ub4-aE-cSj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bVF-4X-ktS"/>
+                            <constraint firstItem="02e-Vq-MD7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="deA-q5-rO3"/>
+                            <constraint firstItem="4zr-hE-8Wp" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kJf-Ib-Wko"/>
+                            <constraint firstItem="40w-61-MTG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="mvh-5c-E69"/>
+                            <constraint firstItem="40w-61-MTG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mzC-gA-8ST"/>
+                            <constraint firstItem="4zr-hE-8Wp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="niv-Wl-vmT"/>
+                            <constraint firstItem="GsK-qe-5yh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qcc-02-zpX"/>
+                            <constraint firstItem="GsK-qe-5yh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rzI-gv-gjw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TUt-TK-z4U" secondAttribute="bottom" constant="31" id="zSe-In-Dfb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KyP-u4-1aN"/>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="4zr-hE-8Wp" id="kwF-Mb-sqL"/>
+                        <outlet property="dateOfBirthTextField" destination="ub4-aE-cSj" id="UGO-p6-Ib7"/>
+                        <outlet property="emailTextField" destination="40w-61-MTG" id="IHk-Yv-lPx"/>
+                        <outlet property="passwordTextField" destination="02e-Vq-MD7" id="dQe-19-9tB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="1047"/>
+        </scene>
+        <!--Zelda Detail View Controller-->
+        <scene sceneID="wN7-2T-zCx">
+            <objects>
+                <viewController id="JYj-No-we8" customClass="zeldaDetailViewController" customModule="Animations_Breakdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VOr-0i-a2Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="tfI-uT-n4w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kem-Sm-Tb6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the-legend-of-zelda-twilight-princess-hd-wii-remote" translatesAutoresizingMaskIntoConstraints="NO" id="5do-Xr-oEg" customClass="CustomImageView" customModule="Animations_Breakdown" customModuleProvider="target">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0AI-RF-QQG"/>
+                                    <constraint firstAttribute="height" constant="200" id="5p4-Nj-8NO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5do-Xr-oEg" firstAttribute="centerX" secondItem="kem-Sm-Tb6" secondAttribute="centerX" id="S39-qw-F7N"/>
+                            <constraint firstItem="5do-Xr-oEg" firstAttribute="centerY" secondItem="kem-Sm-Tb6" secondAttribute="centerY" id="uVP-Rb-vHS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="zeldaProfile" destination="5do-Xr-oEg" id="e3S-P5-UnW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F29-Kp-haG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1569" y="1047"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C92-EQ-Ukg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ap3-RP-r8h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O4T-bY-LpH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.070588235289999995" green="0.21176470589999999" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cYu-ig-HTt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kI4-If-4ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="1047"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blurBack" width="414" height="736"/>
+        <image name="the-legend-of-zelda-twilight-princess-hd-wii-remote" width="1920" height="1080"/>
+    </resources>
+</document>
